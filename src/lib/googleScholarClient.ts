@@ -311,8 +311,6 @@ export function initGoogleScholarClient() {
     const {
       author,
       journal,
-      dateFrom,
-      dateTo,
       articleType,
       speciesHumans,
       speciesAnimals,

@@ -228,13 +228,6 @@ body {
   color: #d1d5db;
   cursor: not-allowed;
 }
-/* Font Awesome */
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
-/* (nếu bạn còn class .action-btn cũ thì có thể xoá, không cần nữa) */
-body {
-  font-family: "Inter", sans-serif;
-}
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 .app-layout {
   display: grid;

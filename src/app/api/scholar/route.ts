@@ -49,9 +49,10 @@ export async function GET(req: NextRequest) {
     }
     const data = await response.json();
     return NextResponse.json(data);
-  } catch (error: any) {
+  } catch (error) {
+    const message = error instanceof Error ? error.message : "Unknown error";
     return NextResponse.json(
-      { error: "Failed to reach SerpAPI", details: error?.message },
+      { error: "Failed to reach SerpAPI", details: message },
       { status: 502 }
     );
   }
